@@ -1,0 +1,36 @@
+@import "vars"
+
+@media only screen and (max-width : 660px)
+  .sidebar
+    width: 250px
+    padding: 30px 25px
+
+  .section-content__content
+    width: calc(100% - 250px)
+
+@media only screen and (max-width : 480px)
+  .sidebar
+    background: #fff
+    height: auto
+    padding: 22px 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 3
+    .sidebar-menu
+      display: none
+    .logo
+      max-width: 100px
+      margin: 0
+
+  .btn-mobile-sidebar
+    display: flex
+
+  .section-content__content
+    width: 100%
+    height: auto
+    padding: 100px 20px 20px
